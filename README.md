@@ -16,3 +16,7 @@ todo.view = function(ctrl) {
     </div>
 };
 ```
+
+###Installation
+
+Add `gem "mithril-rails"` to your Gemfile.
