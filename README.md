@@ -21,7 +21,7 @@ Be sure to include the `/** @jsx m **/` comment in your views.
 
 ###Installation
 
-Add `gem "mithril-rails"` to your Gemfile.
+Add `gem "mithril_rails"` to your Gemfile.
 
 ###Development
 
