@@ -7,7 +7,7 @@ It allows you to create views with a `.js.msx` extension.
 
 Example: (app/assets/javascripts/todo.js.msx)
 ```
-/** @jsx m */
+/** @jsx m **/
 
 todo.view = function(ctrl) {
     return <div class="dude">
