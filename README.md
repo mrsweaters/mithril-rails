@@ -20,3 +20,7 @@ todo.view = function(ctrl) {
 ###Installation
 
 Add `gem "mithril-rails"` to your Gemfile.
+
+###Development
+
+This is the first release, more functionality to come, such as generating a scaffold for controllers and views for Mithril-based applications.
