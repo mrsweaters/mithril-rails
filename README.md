@@ -1,6 +1,6 @@
 ###Introduction
 
-This project rocks and uses MIT-LICENSE. This gem is based on the work that Jonathan Buchanan did on MSX and the react-rails gem.
+This gem allows you to write plan HTML views for your Mithril-based applications, making it easier to collaborate with designers and other developers not familiar with the Mithril view syntax. It is based on the work that Jonathan Buchanan did on MSX and the react-rails gem.
 
 It allows you to create views with a `.js.msx` extension.
 
@@ -16,6 +16,8 @@ todo.view = function(ctrl) {
     </div>
 };
 ```
+
+Be sure to include the `/** @jsx m **/` comment in your views.
 
 ###Installation
 
