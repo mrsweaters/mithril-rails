@@ -1,4 +1,4 @@
-###MithrilRails
+###Introduction
 
 This project rocks and uses MIT-LICENSE. This gem is based on the work that Jonathan Buchanan did on MSX and the react-rails gem.
 
