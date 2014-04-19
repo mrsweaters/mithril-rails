@@ -1,6 +1,6 @@
 ###Introduction
 
-This gem allows you to write plain HTML views for your Mithril-based applications, making it easier to collaborate with designers and other developers not familiar with the Mithril view syntax. It is based on the work that Jonathan Buchanan did on MSX and the react-rails gem.
+This gem allows you to write plain HTML views for your [Mithril-based](https://github.com/lhorie/mithril.js) applications, making it easier to collaborate with designers and other developers not familiar with the Mithril view syntax. It is based on the work that Jonathan Buchanan did on [MSX](https://github.com/insin/msx) and the [react-rails](https://github.com/reactjs/react-rails) gem.
 
 It allows you to create views with a `.js.msx` extension.
 
