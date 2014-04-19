@@ -23,6 +23,8 @@ Be sure to include the `/** @jsx m **/` comment in your views.
 
 Add `gem "mithril_rails"` to your Gemfile.
 
+You can then add Mithril to your asset manifest files with `//= require mithril`
+
 ###Development
 
 This is the first release, more functionality to come, such as generating a scaffold for controllers and views for Mithril-based applications.
