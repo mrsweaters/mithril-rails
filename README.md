@@ -5,7 +5,7 @@ This gem allows you to write plan HTML views for your Mithril-based applications
 It allows you to create views with a `.js.msx` extension.
 
 
-Example: (app/assets/todo.js.msx)
+Example: (app/assets/javascripts/todo.js.msx)
 ```
 /** @jsx m */
 
