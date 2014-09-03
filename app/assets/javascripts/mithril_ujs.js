@@ -1,7 +1,7 @@
 // Unobtrusive scripting adapter for React
 (function(document, window, m) {
   var CLASS_NAME_ATTR = 'data-mithril-class';
-  var PROPS_ATTR = 'data-react-props';
+  var PROPS_ATTR = 'data-mithril-props';
 
   // jQuery is optional. Use it to support legacy browsers.
   var $ = (typeof jQuery !== 'undefined') && jQuery;
