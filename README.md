@@ -28,7 +28,7 @@ You can then add Mithril to your asset manifest files with `//= require mithril`
 ### Unobtrusive JavaScript (Rewrite from [react-rails](https://github.com/reactjs/react-rails))
 
 `mithril_ujs` will call `m.module` for every element with `data-mithril-class` attribute.
-React properties can be specified by `data-react-props` attribute in JSON format. For example:
+Mithril properties can be specified by `data-react-props` attribute in JSON format. For example:
 
 ```erb
 <!-- mithril_ujs will execute `m.module(node, HelloMessage)` -->
@@ -43,6 +43,14 @@ To use `mithril_ujs`, simply `require` it after `mithril` (and after `turbolinks
 //= require turbolinks
 //= require mithril
 //= require mithril_ujs
+```
+
+```js
+HelloMessage = {}
+HelloMessage.controller = function() {
+  ...
+  // Can access to HelloMessage.properties to get data pass by rails template
+}
 ```
 
 ### View helper (Rewrite from [react-rails](https://github.com/reactjs/react-rails))

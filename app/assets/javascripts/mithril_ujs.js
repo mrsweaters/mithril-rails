@@ -26,7 +26,7 @@
       var propsJson = node.getAttribute(PROPS_ATTR);
       var props = propsJson && JSON.parse(propsJson);
       // insert props in to module
-      constructor.Props = props;
+      constructor.properties = props;
       m.module(node, constructor);
     }
   };
