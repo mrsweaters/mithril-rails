@@ -2,7 +2,7 @@ module MithrilRails
   module Rails
     module ViewHelper
 
-      def react_component(name, args = {}, options = {}, &block)
+      def mithril_component(name, args = {}, options = {}, &block)
         options = {:tag => options} if options.is_a?(Symbol)
 
         html_options = options.reverse_merge(:data => {})
