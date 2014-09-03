@@ -45,7 +45,7 @@ To use `mithril_ujs`, simply `require` it after `mithril` (and after `turbolinks
 //= require mithril_ujs
 ```
 
-### View helper
+### View helper (Rewrite from [react-rails](https://github.com/reactjs/react-rails))
 
 There is a view helper method `mithril_component`. It is designed to work with `mithril_ujs` and takes a Mithril component, properties, and HTML options as arguments:
 
