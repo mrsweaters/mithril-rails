@@ -71,7 +71,3 @@ mithril_component('HelloMessage', {name: 'John'}, :span)
 mithril_component('HelloMessage', {name: 'John'}, {id: 'hello', class: 'foo', tag: :span})
 # <span class="foo" id="hello" data-...></span>
 ```
-
-###Development
-
-This is the first release, more functionality to come, such as generating a scaffold for controllers and views for Mithril-based applications.
