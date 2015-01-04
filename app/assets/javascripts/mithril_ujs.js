@@ -1,4 +1,4 @@
-// Unobtrusive scripting adapter for React
+// Unobtrusive scripting adapter for Mithril
 (function(document, window, m) {
   var CLASS_NAME_ATTR = 'data-mithril-class';
   var PROPS_ATTR = 'data-mithril-props';
