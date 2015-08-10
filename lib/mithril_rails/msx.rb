@@ -14,7 +14,7 @@ module MithrilRails
 
           # search for transformer file using sprockets - allows user to override
           # this file in his own application
-          File.read(::Rails.application.assets.resolve('JSXTransformer.js'))
+          File.read(::Rails.application.assets.resolve('MSXTransformer.js'))
 
         @context = ExecJS.compile(contents)
       end
