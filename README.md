@@ -7,8 +7,6 @@ It allows you to create views with a `.js.msx` extension.
 
 Example: (app/assets/javascripts/todo.js.msx)
 ```
-/** @jsx m */
-
 todo.view = function(ctrl) {
     return <div class="dude">
         <input onchange={m.withAttr("value", ctrl.description)} type="text" class="blue" />
@@ -16,8 +14,6 @@ todo.view = function(ctrl) {
     </div>
 };
 ```
-
-Be sure to include the `/** @jsx m */` comment in your views.
 
 ###Installation
 
