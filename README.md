@@ -67,3 +67,24 @@ mithril_component('HelloMessage', {name: 'John'}, :span)
 mithril_component('HelloMessage', {name: 'John'}, {id: 'hello', class: 'foo', tag: :span})
 # <span class="foo" id="hello" data-...></span>
 ```
+
+### Configuration
+
+`mithril_rails` uses default MSXTransformer options when transpiling. However if you wish to set compiler options, create a file `config/mithril-rails.yml` with these of these options -
+
+```yml
+# Turn on ES6 transforms, defaults to false.
+harmony: true
+# To disable default precompilation, default to true.
+precompile: false
+# To strip out type annotations, default to false.
+stripTypes: true
+# To generate javascript source map, defaults to false.
+sourceMap: true
+# To parse the file as a valid ES6 module (implies strict mode), defaults to false.
+es6module: true
+# To parses the file as an ES6 module, except disables implicit strict-mode.
+nonStrictEs6module: false
+# To specify target version of ECMAScript, defaults to es5. Valid values are es3 and es5. Use es3 for to support IE8.
+target: es3
+```

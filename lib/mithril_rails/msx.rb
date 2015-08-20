@@ -23,8 +23,17 @@ module MithrilRails
     end
 
     def self.transform(code)
-      result = context.call('JSXTransformer.transform', code)
+      result = context.call('JSXTransformer.transform', code, options)
       return result['code']
+    end
+
+    def self.options
+      @options ||= if File.exist?(::Rails.root.join("config/mithril-rails.yml"))
+                     YAML.load(ERB.new(File.read(::Rails.root.join("config/mithril-rails.yml"))).result)
+                   else
+                     {}
+                   end
+      @options
     end
 
   end
