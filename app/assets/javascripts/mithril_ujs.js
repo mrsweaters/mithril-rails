@@ -33,7 +33,7 @@
 
   // Rails CSRF protection
 
-  var CSRFparam = '', CSRFtoken = '';
+  var CSRFtoken = '';
 
   var setUpCSRF = function() {
     if ($) {
@@ -51,10 +51,13 @@
     if (CSRFparam && CSRFtoken && !m.requestWithoutCSRFProtection) {
       m.requestWithoutCSRFProtection = m.request;
       m.request = function(options) {
-        var data = options.data || {};
+        var config = options.config;
+
         if (options.method && !/^(GET|HEAD)$/i.test(options.method)) {
-          data[CSRFparam] = CSRFtoken;
-          options.data = data;
+          options.config = function(xhr) {
+            xhr.setRequestHeader('X-CSRF-Token', CSRFtoken);
+            config && config(xhr);
+          };
         }
         m.requestWithoutCSRFProtection(options);
       };
